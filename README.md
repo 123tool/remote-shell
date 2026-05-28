@@ -1,14 +1,14 @@
-## 🚀 Remote Shell
+## Remote Shell
 
 A secure, multi-threaded, and cross-platform **Remote Administration Tool (RAT) / Reverse Shell Management** written in Python. This tool allows developers and system administrators to manage remote sessions over an encrypted channel across Windows (CMD) and Linux/Xubuntu (Bash/Sh) systems.
 
 ---
 
-## 📌 About The Project
+## About The Project
 
 **Prowler Remote Shell** operating on a Client-Server architecture using **Reverse TCP Connections**. Instead of the server connecting to the client (which is often blocked by firewalls or NAT), the client initiates an outbound connection back to the controller.
 
-### Core Architecture & Flow
+## Core Architecture & Flow
 ```text
   [ Attacker / Server ] <--- (Encrypted Outbound Connection) --- [ Target / Client ]
   (prowler-pro console)                                          (Windows Registry/Cronjob)
@@ -22,7 +22,7 @@ A secure, multi-threaded, and cross-platform **Remote Administration Tool (RAT) 
 - ​📁 Advanced File Manager: High-speed encrypted upload and download functions built directly into the remote shell environment.
 - ​🎯 Resilient Connection: Features an infinite automated reconnection loop on the client side, ensuring re-engagement if the network drops.
 
-## ​🛠️ Installation & Requirements
+## ​Installation & Requirements
 ​Prerequisites
 ​Both Server and Client machines require Python 3.x and the standard cryptographic library installed.
 ```
