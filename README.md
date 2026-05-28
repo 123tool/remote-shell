@@ -45,3 +45,34 @@ Step 2: Execute the Client (Target Machine)
 ```
 python client.py
 ```
+Step 3: Interacting via Management Console
+​Once a session is established, control the interface using the following framework commands :
+| Command | Description |
+| :--- | :--- |
+| `list` | Displays all active, verified encrypted target sessions. |
+| `select <id>` | Connects interacting terminal directly to the specified target ID. |
+| `exit` | Safely disconnects all sessions and shuts down the main server listener. |
+
+## Inside the Active Remote Session (`secure-remote>`)
+* **Run Native Commands:** Execute any native OS commands (e.g., `dir`, `ipconfig` on Windows or `ls -la`, `ifconfig` on Linux).
+* **Persistence Deployment:**
+    ```text
+    secure-remote> persistence
+    ```
+* **Download File from Target:**
+    ```text
+    secure-remote> download database.db
+    ```
+* **Upload File to Target:**
+    ```text
+    secure-remote> upload patch_update.sh
+    ```
+* **Return to Main Menu:**
+    ```text
+    secure-remote> back
+    ```
+---
+
+## ⚠️ Disclaimer
+
+> **EDUCATIONAL PURPOSES ONLY.** This software is developed strictly for authorized security auditing, system administration research, and educational deployment. The developer (**SPY-E / 123tool**) assumes no liability for unauthorized usage, mitigation bypasses, or damages caused by misuse of this infrastructure tool.
